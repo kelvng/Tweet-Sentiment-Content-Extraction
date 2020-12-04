@@ -12,6 +12,7 @@ What we need is to develop a method to pick out the part of the tweet (word or p
 
 ------------------------Methodology:
 
+
 Step 1 - Preprocessing:
 
 Drop missing value (row 314) from train set;
@@ -21,6 +22,7 @@ Remove texts with neutral sentiment from train set and test set;
 Remove URL from train set and test set;
 
 Create n-grams subsets for train set and test set from original texts for only the row with subsets Len(ngrams) / Len(original text) <= 0.5.
+
 
 
 Step 2 - Create features: Create part of general features without using n-grams to save time. Then create other features for texts after creating train subsets and test subsets with n-grams：
@@ -52,9 +54,11 @@ Prop_sel_text_n_uq_chars: Number of unique characters in ngram / Number of uniqu
 Prop_sel_text_n_prepositions: Number of prepositions in ngram / Number of prepositions in original text
 
 
+
 Step 3 - Create Dependent Variable:
 
 Jaccard: Jaccard score between n-grams and selected text
+
 
 
 Step 4 - Train model and make predictions
