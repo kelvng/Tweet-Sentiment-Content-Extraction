@@ -8,7 +8,8 @@ Capturing tweets sentiments is essential in today’s online community since the
 
 What we need is to develop a method to pick out the part of the tweet (word or phrase) that reflects the sentiment (sentiment is given) - Which means we need to create the "selected_text" column in the test dataset.
 
-Methodology:
+#Methodology:
+
 Step 1 - Preprocessing:
 
 Drop missing value (row 314) from train set;
